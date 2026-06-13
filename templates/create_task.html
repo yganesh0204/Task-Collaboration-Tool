@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Task</title>
+</head>
+<body>
+
+<h1>Create New Task</h1>
+
+<form method="POST">
+
+    Task Title:
+    <input type="text" name="title" required>
+    <br><br>
+
+    Description:
+    <textarea name="description" required></textarea>
+    <br><br>
+
+    Assigned To:
+    <input type="text" name="assigned_to" required>
+    <br><br>
+
+    Status:
+    <select name="status">
+        <option>Pending</option>
+        <option>In Progress</option>
+        <option>Completed</option>
+    </select>
+
+    <br><br>
+
+    <button type="submit">Create Task</button>
+
+</form>
+
+<br>
+<a href="/">Back Home</a>
+
+</body>
+</html>

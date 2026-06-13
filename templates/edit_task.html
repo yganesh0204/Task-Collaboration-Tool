@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Task</title>
+</head>
+<body>
+
+<h1>Edit Task</h1>
+
+<form method="POST">
+
+    Title:
+    <input type="text" name="title" value="{{ task[1] }}" required>
+    <br><br>
+
+    Description:
+    <input type="text" name="description" value="{{ task[2] }}" required>
+    <br><br>
+
+    Assigned To:
+    <input type="text" name="assigned_to" value="{{ task[3] }}" required>
+    <br><br>
+
+    Status:
+    <select name="status">
+        <option>Pending</option>
+        <option>In Progress</option>
+        <option>Completed</option>
+    </select>
+
+    <br><br>
+
+    <button type="submit">Update Task</button>
+
+</form>
+
+<br>
+
+<a href="/tasks">Back to Tasks</a>
+
+</body>
+</html>
